@@ -1,0 +1,51 @@
+projects/*
+!projects/example_project/
+!projects/example_project/**
+
+# Common build outputs
+**/build/
+**/dist/
+**/out/
+**/target/
+**/cmake-build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/compile_commands.json
+**/coverage/
+
+# Python caches
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+**/*.egg-info/
+**/.eggs/
+
+# Frontend / package manager artifacts
+**/node_modules/
+**/.next/
+**/.nuxt/
+**/.parcel-cache/
+**/.svelte-kit/
+**/*.tsbuildinfo
+
+# Native / binary build artifacts
+**/*.o
+**/*.obj
+**/*.a
+**/*.la
+**/*.lo
+**/*.so
+**/*.dylib
+**/*.dll
+**/*.exe
+
+# Crash dumps
+core.*
+*.core
+
+# Large generated artifacts found in this workspace
+data/results/*
+!data/results/.gitkeep
