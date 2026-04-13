@@ -1,7 +1,8 @@
 projects/*
 !projects/example_project/
 !projects/example_project/**
-
+!projects/BD_isaacgym/
+!projects/BD_isaacgym/**
 
 # Common build outputs
 **/build/
