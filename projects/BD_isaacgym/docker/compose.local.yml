@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    volumes:
+      - ..:/workspace/project
+      - ${HOME}/workspace/data:/workspace/data
+
+    stdin_open: true
+    tty: true
+    network_mode: host
+
+    command: tail -f /dev/null
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

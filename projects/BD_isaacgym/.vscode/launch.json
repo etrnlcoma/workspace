@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // "args" : ["--task", "humanoid_vanilla", "--num_envs=1", "--disable_wandb", "--disable_local_saving", "--sim_device=cpu", "--rl_device=cpu"]
+            // "args" : ["--task", "humanoid_vanilla", "--num_envs=4096", "--disable_wandb", "--disable_local_saving", "--headless"]
+            "args" : ["--task", "humanoid_controller", "--num_envs=1", "--sim_device=cpu", "--rl_device=cpu"]
+            // "args" : ["--task", "humanoid_controller", "--num_envs=1", "--disable_wandb", "--disable_local_saving", "--sim_device=cpu", "--rl_device=cpu"]
+            // "args" : ["--task", "humanoid_controller", "--num_envs=4096", "--disable_wandb", "--disable_local_saving", "--headless"]
+        }
+    ]
+}
