@@ -2,6 +2,7 @@ projects/*
 !projects/example_project/
 !projects/example_project/**
 
+
 # Common build outputs
 **/build/
 **/dist/
